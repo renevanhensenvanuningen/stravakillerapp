@@ -1,0 +1,44 @@
+<p>
+  main works!
+</p>
+<p>Total 0- 7 dagen: {{totalCalories7 }}</p>
+<p>Total 7-14 dagen: {{totalCalories14}}</p>
+<p>Total 14-21 dagen: {{totalCalories21}}</p>
+<p>Total 21-28 dagen: {{totalCalories28}}</p>
+
+<p>Total distance 4 0- 7 dagen: {{totalDistance7 }}</p>
+<p>Total distance 7-14 dagen: {{totalDistance14}}</p>
+<p>Total distance 14-21 dagen: {{totalDistance21}}</p>
+<p>Total distance 21-28 dagen: {{totalDistance28}}</p>
+
+
+
+<button type="button" (click)="onStravaData()">Get Strava</button>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Datum</th>
+      <th scope="col">Naam</th>
+      <th scope="col">Energie</th>
+      <th scope="col">Afstand</th>
+      <th scope="col">Duur</th>
+      <th scope="col">Suffer score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of myActivities | async">
+      <td>{{i.start_date}}</td>
+      <td>{{i.name}}</td>
+      <td>{{i.kilojoules}}</td>
+      <td>{{i.distance}}</td>
+      <td>{{i.elapsed_time }}</td>
+      <td>{{i.elapsed_time  }}</td>
+      <td>{{i.suffer_score}}</td>
+      <td><a [routerLink] = "['/details', i.id]">Details</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+

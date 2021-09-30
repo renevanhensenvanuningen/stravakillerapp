@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/72128f7c-9809-4e5b-8a42-5e1bd4df5924/resourceGroups/UdemyCourse/providers/Microsoft.Web/sites/SuperStrava",
+    "appService.deploySubpath": "."
+}
