@@ -3,7 +3,7 @@ import { Activity } from '../activity.model';
 import { StravaserviceService } from '../stravaservice.service';
 import { partition } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
-import * as Plotly from 'plotly.js';
+
 
 @Component({
   selector: 'app-activitydetail',
