@@ -49,7 +49,6 @@ export class ActivitydetailComponent implements OnInit {
   }
 
 
-
   onStravaData() {
     this.fetching  = true;
     this.stravaService.getActivities();
