@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { map, switchMap } from 'rxjs/operators';
 import { Activity } from './activity.model';
-import { PARAMETERS } from '@angular/core/src/util/decorators';
+//import { PARAMETERS } from '@angular/core/src/util/decorators';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -16,7 +16,7 @@ export class StravaserviceService {
 
    // tslint:disable-next-line: max-line-length
   strava_accesstoken_url = 'https://www.strava.com/oauth/token?client_id=12257&client_secret=ed0ef6cc610488dac34b472cab54ab0f057f9f91&refresh_token=662333d22befbcdf2ba820009e4ee44ccd361e5b&grant_type=refresh_token';
- 
+
   constructor(private http: HttpClient) { }
 
 
