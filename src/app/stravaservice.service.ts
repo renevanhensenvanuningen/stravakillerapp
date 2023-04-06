@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { map, switchMap } from 'rxjs/operators';
 import { Activity } from './activity.model';
-//import { PARAMETERS } from '@angular/core/src/util/decorators';
 import { Observable } from 'rxjs';
 
 @Injectable({
